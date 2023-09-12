@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Właściowości</title>
+</head>
+<body>
+    <div class="content"> Zawartość strony </div>
+    <button class = "button">
+       <span> Egzamin</span> 
+    </button>
+    <script>
+        const btn= document.querySelector(".button");
+        console.log(btn.innerHTML);
+        btn.innerHTML = "<span> Egzamin inf.03</span>"
+        console.log(btn.innerHTML);
+        btn.addEventListener("click", () => {
+       //  document.querySelector(".content").innerHTML = "Nowy tekst";
+       document.querySelector(".content").innerHTML = `<h2> Imię i Nazwisko </h2>
+       <p> Janusz <strong> Kowalski </strong> </p>
+       <button class="clear"> Wyczyść zawartość </button>
+       `;
+       
+        })
+// Przycisk o klasie clear ma wyczcyścic zawartośc elementy .content
+// Na kolejnej lekcji omówić funkcję strzałkową
+    </script>
+</body>
+</html>
